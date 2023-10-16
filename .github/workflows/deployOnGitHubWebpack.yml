@@ -41,13 +41,13 @@ jobs:
     - name: Set env
       run: |
           touch .env
-          echo SERVER_URL=${{ secrets.SERVER_URL}} >> .env
+          echo SERVER_URL=${{secrets.SERVER_URL}} >> .env
           cat .env
       
     - name: build project
       run: npm run build
       env:
-        SERVER_URL: ${{ secrets.SERVER_URL}}
+        SERVER_URL: ${{secrets.SERVER_URL}}
 
     - name: upload-pages-artifact
       uses: actions/upload-pages-artifact@v2
