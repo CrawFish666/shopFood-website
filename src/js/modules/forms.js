@@ -164,9 +164,9 @@ async function feedBackforms({ arrayFormNames, urlSendData, messages, closeTimer
 				.finally(() => {
 
 					document.forms[`${item}`].reset()
-					mask.masked.reset()
+					mask.value = ''
 					// maskName.value = ''
-					maskName.masked.reset()
+					maskName.value = ''
 				})
 
 			// form.parentElement.parentElement.style.cssText = `
