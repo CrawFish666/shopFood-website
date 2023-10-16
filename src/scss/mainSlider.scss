@@ -1,0 +1,142 @@
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+.offer {
+	// .offer__slider
+
+	&__slider {
+		// width: 650px;
+		margin-top: 50px;
+		// display: flex;
+		// flex-direction: row;
+		// align-items: flex-end;
+
+		width: 650px;
+		&.swiper {
+			margin-right: 0;
+		}
+	}
+
+	// .offer__wrapper
+
+	&__wrapper {
+		// display: flex;
+		// overflow: hidden;
+		//
+		margin-top: 15px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+	}
+
+	// .offer__slide
+
+	&__slide {
+		// width: 100%;
+		height: 390px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.offer__controllers {
+	display: flex;
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+.offer {
+	// .offer__controllers
+
+	&__controllers {
+	}
+
+	// .offer__prev
+
+	&__prev {
+		background-color: inherit;
+		
+	}
+
+	// .offer__next
+
+	&__next {
+		background-color: inherit;
+	}
+}
+.offer__count {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.offer__count-current {
+	font-size: 48px;
+	font-weight: 700;
+	color: #000;
+}
+.offer__count-total {
+	font-size: 24px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.swiper-button-next {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+
+// .offer__slider {
+// 	width: 650px;
+// 	margin-top: 50px;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: flex-end;
+// }
+// .offer__slider-counter {
+// 	display: flex;
+// 	width: 180px;
+// 	align-items: center;
+// 	font-size: 24px;
+// 	color: rgba(0, 0, 0, 0.5);
+// }
+// .offer__slider-wrapper {
+// 	width: 100%;
+// 	margin-top: 15px;
+// 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+// }
+// .offer__slider-prev {
+// 	margin-right: 10px;
+// 	cursor: pointer;
+// }
+// .offer__slider-next {
+// 	margin-left: 10px;
+// 	cursor: pointer;
+// }
+// .offer__slider #current {
+// 	font-size: 48px;
+// 	font-weight: 700;
+// 	color: #000;
+// }
+// .offer__slide {
+// 	width: 100%;
+// 	height: 390px;
+// }
+// .offer__slide img {
+// 	width: 100%;
+// 	height: 100%;
+// 	object-fit: cover;
+// }

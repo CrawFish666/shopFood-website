@@ -1,0 +1,103 @@
+/* звездочка означает что обращаемся ко всем тегам */
+
+* {
+	padding: 0; /*внутренний отступ*/
+	margin: 0; /* внешний отступ */
+	border: 0; /* границы */
+}
+
+/* меняеем подсчет ширины блока для удобной верстки */
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* убираем линии обводки у некоторых браузеров */
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* блоки ниже делаем блочными */
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+/* обращаемся к тегам и они уравнивают поведение шрифтом,
+ запрещает увеличение шрифта у айфонов самовольно */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-etxt-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* обращаемся к формам и просим наследовать
+ семейство шрифта, т.к. по умолчанию этого нет */
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/* убирает некоторые особенности в разных браузерах
+ убирает крестик в инпутах;
+ убирает лишние отступы; чистятся стили маркированных списков */
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+/* */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/* лечит горизонтальный скролл при этом оставляет вертикальый
+оборачиваем весь сайт в body во wrapper */
+.wrapper {
+	min-height: 100%;
+}
+body {
+	overflow-x: hidden;
+}
