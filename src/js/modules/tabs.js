@@ -1,8 +1,5 @@
 // Tabs
-// let tabs = document.querySelectorAll('.tabheader__item');
-// let tabsContent = document.querySelectorAll('.tabcontent');
-// let tabsParent = document.querySelector('.tabheader__items');
-// tabheader__item_active без точки надо
+
 function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, tabsActiveClass) {
 
 	let tabs = document.querySelectorAll(tabsSelector);

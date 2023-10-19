@@ -78,22 +78,6 @@ function closeModal(modal, showClass) {
 	document.body.style.overflow = '';
 }
 
-// export const modalTimer = (function (showByTimer) {
-// 	console.log(showByTimer);
-// 	if (showByTimer?.active && (showByTimer?.delay && showByTimer?.delay >= 0)) {
-// 		return setTimeout(() => openModal(modal, showClass, modalTimer), showByTimer.delay)
-// 	} else {
-// 		return null
-// 	}
-// })()
-// export const modalTimer = (showByTimer, modal, showClass, modalTimer) => {
-// 	console.log(showByTimer);
-// 	if (showByTimer?.active && (showByTimer?.delay && showByTimer?.delay >= 0)) {
-// 		return setTimeout(() => openModal(modal, showClass, modalTimer), showByTimer.delay)
-// 	} else {
-// 		return null
-// 	}
-// }
 
 export default modal;
 export { openModal, closeModal }

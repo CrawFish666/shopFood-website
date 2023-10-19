@@ -2,14 +2,12 @@ import '../scss/main.scss';
 import tabs from './modules/tabs';
 import promoTimer from './modules/timerPromotion'
 import calcActivity from './modules/calcActivity';
-import modal, { openModal, closeModal, modalTimer } from './modules/modal';
-import api from './services/api';
+import modal, { openModal, closeModal} from './modules/modal';
 import renderMenuCard from './modules/renderMenuCards';
 import { feedBackforms } from './modules/forms';
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
-import IMask from 'imask';
+
 
 window.addEventListener('DOMContentLoaded', function () {
 	let modalTimerId = setTimeout(() => openModal(document.querySelector('[data-modal]'), 'modal_show', modalTimerId), 4000)
@@ -26,10 +24,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			delay: 3000,
 			disableOnInteraction: false,
 		},
-		// pagination: {
-		// 	el: ".swiper-pagination",
-		// 	clickable: true,
-		// },
 		navigation: {
 			nextEl: ".offer__next",
 			prevEl: ".offer__prev",
@@ -41,19 +35,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			type: 'fraction',
 		},
 		effect: 'fade',
-		// fadeEffect: {
-		// 	crossFade: true,
-		// }
-		// // If we need pagination
-		// pagination: {
-		// 	el: '.swiper-pagination',
-		// },
 
-		// // Navigation arrows
-		// navigation: {
-		// 	nextEl: '.swiper-button-next',
-		// 	prevEl: '.swiper-button-prev',
-		// },
 	})
 
 
@@ -116,97 +98,5 @@ window.addEventListener('DOMContentLoaded', function () {
 		},
 		modalTimerId
 	})
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
-
-
-
-/*
-
-
-
-ДРУГОЙ УРОК
-Webpack, создать отдельный doc
-Webpack - сборщик модулей, скриптов, формирует папки, стили и т.д.
-Gulp - task runner, планировщик задач. Не умеет собирать скрипты, обрабатывать изображения и т.д.
-
-
-
-
-
-Webpack
-
-Установка
-npm install webpack webpack-cli --save-dev
-Создаем структуру файлов
-|- package.json
-|- package-lock.json
-|- index.html
-|- /src
-	|- index.js
-
-
-
-Создаем файл вне src webpack.config.js с настройками
-const path = require('path'); // техническая переменная
-
-module.exports = {
-	mode: 'development', // режим в котором работает вебпак
-	// продакшн режим нужен для конечной сборки продукта
-	// девелопмент сборка будет быстрее и мало плагинов используется
-	entry: './src/index.js', // файл с которого начинаем, все зависимости requier и import
-	// если надо несколько файлов, то нужно создать объект
-	output: { // файл выхода
-		filename: 'main.js', // название
-		path: path.resolve(__dirname, 'dist'), // куда положить
-	},
-	watch: true, // после того как запустим webpack будет слежить за изменениями файлов и собирать каждый раз
-	devtool: "source-map", // при сборке проекта позволит отследить что к чему отсылается
-	module: {} // тут модули вебпака и их настройка. Например babel
-};
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
